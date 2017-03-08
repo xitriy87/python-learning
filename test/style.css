@@ -1,0 +1,53 @@
+body {
+	margin: 0 auto;
+
+}
+
+table, td {
+	margin: 0 auto;
+	border: 1px solid;
+	padding: 0px;
+	border-spacing: 0px;
+}
+
+
+#header {
+	height: 150px;
+	width: 900px;
+	background-image: url(img/header.jpg);
+	background-repeat: no-repeat;
+	padding: 0px;
+}
+
+#menu {
+	height: 30px;
+	width: 900px;
+}
+
+#left_content {
+	height: 400px;
+	width: 300px;
+}
+
+#right_content {
+	height: 400px;
+	width: 600px;
+}
+
+#footer {
+	height: 50px;
+	width: 900px;
+}
+
+#menu {
+	background-image: url(img/menu.gif);
+	background-repeat: repeat-x;
+}
+
+#menu span {
+	
+}
+
+#menu span:after {
+	content: url(img/menu_border.gif);
+}
