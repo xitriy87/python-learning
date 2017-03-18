@@ -1,6 +1,10 @@
 import json
+import os
 
-with open('countries.json', 'r') as file_json:
+dir_path = os.path.dirname(os.path.realpath(__file__))
+countries_file = os.path.join(dir_path, 'countries.json')
+
+with open(countries_file, 'r') as file_json:
 	countries = json.load(file_json)
 
 
@@ -24,7 +28,7 @@ def add_country(name = '', sea = 'False', population = 0, Location = '' ):
 	countries[name] = {'name': name, 'sea': sea, 'population': population, 'Location': Location }
 
 def write_counties():
-	with open('countries.json', 'w') as json_file:
+	with open(countries_file, 'w') as json_file:
 		json.dump(countries, json_file)
 
 while True:
